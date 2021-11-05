@@ -1,0 +1,47 @@
+
+:root {
+    --first-tcolor: #009879;
+    --second-tcolor: #fff;
+    --third-tcolor: #dddd;
+    --fourth-tcolor: #f3f3f3;
+}
+
+.table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: .9em;
+    min-width: 400px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.table thead tr {
+    background-color: var(--first-tcolor);
+    color: var(--second-tcolor);
+    text-align: left;
+    font-weight: bold;
+}
+.table th,
+.table td {
+    padding: 12px 15px;
+}
+.table tbody tr {
+    border-bottom: 1px solid var(--third-tcolor);
+}
+.table tbody tr:nth-of-type(even) {
+    background-color: var(--fourth-tcolor);
+}
+.table tbody th:last-of-type {
+    border-bottom: 2px solid var(--first-tcolor);
+}
+.table tbody tr:hover {
+    font-weight: bold;
+    color: var(--first-tcolor);
+}
+.table tbody td i {
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 5px;
+}
+.row-empty {
+    text-align: center;
+}
